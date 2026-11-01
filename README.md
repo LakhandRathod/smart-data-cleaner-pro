@@ -1,92 +1,85 @@
+
 # Smart Data Cleaner Pro
 
-A desktop-based Excel and CSV data cleaning application built with Python, CustomTkinter and Pandas.
+A Python-based desktop application for automated Excel and CSV data cleaning.
 
 ## Features
 
-- Import Excel (`.xlsx`, `.xls`) and CSV (`.csv`) files
-- Remove duplicate rows and completely blank rows
-- Trim leading and trailing spaces from text columns
-- Convert text columns to Title Case
-- Optionally remove rows containing missing values
-- Preview source data and compare before/after results
-- Export cleaned data to Excel and CSV
-- Save a local cleaning history
-- Dark and light appearance modes
-- Optional drag-and-drop file upload
+- Import Excel and CSV files
+- Remove duplicate rows
+- Remove completely blank rows
+- Remove leading and trailing spaces
+- Convert text to Title Case
+- Interactive data preview
+- Before and after comparison
+- Cleaning history
+- Export cleaned files to Excel and CSV
+- Light and Dark mode
+- Optional drag-and-drop support
 
-## Requirements
+## Application Screenshots
 
-- Python 3.10 or newer recommended
-- Windows, macOS or Linux desktop environment
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Data Preview
+![Data Preview](screenshots/preview.png)
+
+### Before and After Comparison
+![Before After](screenshots/before-after.png)
+
+### Cleaning Report
+![Cleaning Report](screenshots/cleaning-report.png)
+
+## Technologies Used
+
+- Python
+- CustomTkinter
+- Pandas
+- OpenPyXL
+- Tkinter
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/smart-data-cleaner-pro.git
+git clone https://github.com/LakhandRathod/smart-data-cleaner-pro.git
 cd smart-data-cleaner-pro
-```
-
-Create and activate a virtual environment (recommended):
-
-### Windows PowerShell
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
 ```
 
 Install dependencies:
 
-```powershell
+```bash
 python -m pip install -r requirements.txt
 ```
 
 Run the application:
 
-```powershell
+```bash
 python app/main.py
 ```
 
-## How to use
-
-1. Open the application.
-2. Browse for an Excel or CSV file.
-3. Choose an output folder.
-4. Select the cleaning operations.
-5. Click **Clean Data**.
-6. Review the before/after comparison and cleaning history.
-7. Find the exported `_cleaned.xlsx` and `_cleaned.csv` files in the selected output folder.
-
-## Project structure
+## Project Structure
 
 ```text
 smart-data-cleaner-pro/
 ├── app/
 │   └── main.py
 ├── docs/
+│   └── PROJECT_DOCUMENTATION.md
 ├── screenshots/
-├── .gitignore
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
 
-## Notes
+## Author
 
-- This is a desktop application, not a web application. GitHub stores and shares the source code; GitHub Pages cannot run this Python desktop GUI.
-- Drag-and-drop support is optional and requires `tkinterdnd2`.
-- Your input spreadsheets are processed locally. Do not commit private or sensitive datasets to GitHub.
-- Cleaning history is stored locally in `cleaning_history.json` when the application runs.
+**Lakhan Rathod**
 
-## Future improvements
+GitHub: https://github.com/LakhandRathod
 
-- Unit tests and automated checks
-- More data validation and cleaning rules
-- Build a Windows executable
-- Add configurable cleaning rules and downloadable reports
+---
 
-## License
-
-Choose and add a license before accepting contributions or allowing reuse. If you do not add one, normal copyright restrictions apply.
+If you find this project useful, consider giving it a star!
